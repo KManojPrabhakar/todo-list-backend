@@ -134,9 +134,14 @@ let getAllListFunction = (req, res) => {
 }
 
 
+let sentFriendRequestFunction = (req,res) => {
+    
+}
+
 
 
 module.exports = {
     createList: createListFunction,
-    getAllLists: getAllListFunction
+    getAllLists: getAllListFunction,
+    sentFriendRequest: sentFriendRequestFunction
 }
