@@ -12,11 +12,23 @@ module.exports.setRouter = (app) => {
     // defining routes.
 
 
-  
+
 
     app.post(`${baseUrl}/createList`, todoListController.createList);
 
-     app.get(`${baseUrl}/getAllLists/:userId`, todoListController.getAllLists);
+    app.get(`${baseUrl}/getAllLists/:userId`, todoListController.getAllLists);
+
+    app.post(`${baseUrl}/:userId/:listId/deleteList`, todoListController.deleteList);
+    app.post(`${baseUrl}/:userId/:listId/editList`, todoListController.editListName);
+
+    // app.post(`${baseUrl}/findEmail`, todoListController.findEmail);
+    app.post(`${baseUrl}/:userId/:listId/sentFriendRequest`, todoListController.sentFriendRequest);
+        app.post(`${baseUrl}/acceptFriend`, todoListController.acceptFriendRequest);
+
+
+
+
+
 
 
 
