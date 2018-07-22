@@ -109,7 +109,7 @@ let createListFunction = (req, res) => {
         .then(saveListDetails)
         .then((resolve) => {
             // delete resolve.password
-            let apiResponse = response.generate(false, 'User created', 200, resolve)
+            let apiResponse = response.generate(false, 'List created', 200, resolve)
             res.send(apiResponse)
         })
         .catch((err) => {
