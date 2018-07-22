@@ -283,7 +283,7 @@ let sentFriendRequestEmail  = (data)  => {
         subject:"Accept Invitation",
         text: 'You are receiving this because your friend '+data.userName+' have requested to join  the list of their todolist \n\n' +
           'Please click on the following link, or paste this into your browser to accept the invitation:\n\n' +
-          'http://todolist.testmanoj.com/acceptFriend/' + data.friendRequestId + '\n\n' 
+          'http://todolist1.testmanoj.com/acceptFriend/' + data.friendRequestId + '\n\n' 
         }
     console.log(mailOptions);
     smtpTransport.sendMail(mailOptions, function (error, response) {
